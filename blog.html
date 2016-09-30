@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Simply Flat - Blog</title>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+   <div class="container">
     <!-- Heading 1, make a link and use "index.html" for href attribute value -->
-    <header>
-        <div>
+    <header class="row">
+        <div class="one-third column">
             <h1><a href="index.html">Simply Flat</a></h1>
         </div>
         <!-- Unordered list -->
-        <nav>
+        <nav class="two-thirds column">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <!-- Link, make href attribute value = "index.html" -->
@@ -36,8 +39,8 @@
             <!-- Paragraph -->
             <p>Vel tempor referrentur neglegentur cu, mel ut enim iudicabit intellegat, ea putent salutandi quo. Sonet putant graecis ut nec. Magna laoreet consequuntur vis referrentur neglegentur.</p>
         </section>
-        <section>
-            <div>
+        <section class="row">
+            <div class="two-thirds column">
                 <article>
                     <!-- Heading 2 -->
                     <h2>Pellentesque habitant morbi</h2>
@@ -50,7 +53,7 @@
                     </ul>
 
                     <!-- Image, path to image is "http://lorempixel.com/700/250/business", enter "Business meeting" for alt attribute value -->
-                    <img src="http://lorempixel.com/700/250/business" alt="Business meeting">
+                    <img src="http://lorempixel.com/700/250/business" alt="Business meeting" class="img-responsive">
                     <!-- Paragraph -->
                     <p>Qui ad illud impedit argumentum, per an dicam dignissim signiferumque. Eu consul cetero commune sit. Mundi nostrud disputando vix ea, ut eum latine accusamus corrumpit. Munere ridens nostro eu mel. Nam an labore mediocritatem. Delenit euripidis torquatos eam eu. Tempor admodum adipisci et cum, hinc solum expetendis usu no. Usu ut esse laoreet consequat. Sea mundi decore fastidii et, at mei laudem perfecto oportere, harum deserunt no est. Cum at idque iracundia, diam ceteros molestie vix ad. Eam exerci dolores complectitur ex, patrioque maiestatis eu duo, prompta recteque eam te.</p>
 
@@ -69,7 +72,7 @@
                     </ul>
 
                     <!-- Image, path to image is "http://lorempixel.com/700/250/nature", enter "Nature" for alt attribute value -->
-                    <img src="http://lorempixel.com/700/250/nature" alt="Nature">
+                    <img src="http://lorempixel.com/700/250/nature" alt="Nature" class="img-responsive">
                     <!-- Paragraph -->
                     <p>Qui ad illud impedit argumentum, per an dicam dignissim signiferumque. Eu consul cetero commune sit. Mundi nostrud disputando vix ea, ut eum latine accusamus corrumpit. Munere ridens nostro eu mel. Nam an labore mediocritatem. Delenit euripidis torquatos eam eu. Tempor admodum adipisci et cum, hinc solum expetendis usu no. Usu ut esse laoreet consequat. Sea mundi decore fastidii et, at mei laudem perfecto oportere, harum deserunt no est. Cum at idque iracundia, diam ceteros molestie vix ad. Eam exerci dolores complectitur ex, patrioque maiestatis eu duo, prompta recteque eam te.</p>
 
@@ -88,7 +91,7 @@
                     </ul>
 
                     <!-- Image, path to image is "http://lorempixel.com/700/250/abstract", enter "Abstract" for alt attribute value -->
-                    <img src="http://lorempixel.com/700/250/abstract" alt="Abstract">
+                    <img src="http://lorempixel.com/700/250/abstract" alt="Abstract" class="img-responsive">
                     <!-- Paragraph -->
                     <p>Qui ad illud impedit argumentum, per an dicam dignissim signiferumque. Eu consul cetero commune sit. Mundi nostrud disputando vix ea, ut eum latine accusamus corrumpit. Munere ridens nostro eu mel. Nam an labore mediocritatem. Delenit euripidis torquatos eam eu. Tempor admodum adipisci et cum, hinc solum expetendis usu no. Usu ut esse laoreet consequat. Sea mundi decore fastidii et, at mei laudem perfecto oportere, harum deserunt no est. Cum at idque iracundia, diam ceteros molestie vix ad. Eam exerci dolores complectitur ex, patrioque maiestatis eu duo, prompta recteque eam te.</p>
 
@@ -96,7 +99,7 @@
                     <a href="#">Read More</a>
                 </article>
             </div>
-            <div>
+            <div class="one-third column">
                 <aside>
                     <!-- Form field & button go here - You will add this later -->
                 </aside>
@@ -118,17 +121,17 @@
                     <h3>Recent Entries</h3>
 
                     <!-- Image, path to image is "http://lorempixel.com/100/100/business/1", enter "Business meeting" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/business/1" alt="Business meeting">
+                    <img src="http://lorempixel.com/100/100/business/1" alt="Business meeting" class="img-responsive">
                     <!-- Paragraph -->
                     <p>Anim moon officia Unify is an incredibly beautiful responsive</p>
 
                     <!-- Image, path to image is "http://lorempixel.com/100/100/business/2", enter "Business meeting" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/business/2" alt="Business meeting">
+                    <img src="http://lorempixel.com/100/100/business/2" alt="Business meeting" class="img-responsive">
                     <!-- Paragraph -->
                     <p>Anim moon officia Unify is an incredibly beautiful responsive</p>
 
                     <!-- Image, path to image is "http://lorempixel.com/100/100/business/3", enter "Business meeting" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/business/3" alt="Business meeting">
+                    <img src="http://lorempixel.com/100/100/business/3" alt="Business meeting" class="img-responsive">
                     <!-- Paragraph -->
                     <p>Anim moon officia Unify is an incredibly beautiful responsive</p>
                 </aside>
@@ -137,29 +140,30 @@
                     <h3>Photos</h3>
 
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/1", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/1" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/1" alt="Technical" class="img-responsive">
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/2", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/2" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/2" alt="Technical" class="img-responsive">
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/3", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/3" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/3" alt="Technical" class="img-responsive">
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/4", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/4" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/4" alt="Technical" class="img-responsive">
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/5", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/5" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/5" alt="Technical" class="img-responsive">
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/6", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/6" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/6" alt="Technical" class="img-responsive">
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/7", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/7" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/7" alt="Technical" class="img-responsive">
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/8", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/8" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/8" alt="Technical" class="img-responsive">
                     <!-- Image, path to image is "http://lorempixel.com/100/100/technics/9", enter "Technical" for alt attribute value -->
-                    <img src="http://lorempixel.com/100/100/technics/9" alt="Technical">
+                    <img src="http://lorempixel.com/100/100/technics/9" alt="Technical" class="img-responsive">
                 </aside>
             </div>
         </section>
     </main>
-    <!-- FOOTER -->
-    <div>
+  <footer class="row">
+     <!-- FOOTER -->
+    <div class="one-third column">
         <!-- Heading 4 -->
         <h4>Simply Flat</h4>
 
@@ -168,7 +172,7 @@
         </p>
     </div>
     <!-- Heading 4 -->
-    <div>
+    <div class="one-third column">
         <h4>Testimonials</h4>
 
         <!-- Paragraph -->
@@ -176,7 +180,7 @@
         </p>
     </div>
     <!-- Heading 4 -->
-    <div>
+    <div class="one-third column">
         <h4>Contact Us</h4>
 
         <!-- Unordered List, make the URL a link and use "#" for href attribute value-->
@@ -189,19 +193,22 @@
         </ul>
     </div>
     <!-- Heading 4 -->
-    <div>
+    <div class="one-whole column">
         <h4>We're Social</h4>
 
         <!-- Social media icons go here - You will add them later -->
     </div>
     <!-- Paragraph -->
-    <div>
+    <div class="one-half column">
         <p>&copy; 2013 Simply Flat</p>
     </div>
     <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
-    <div>
+    <div class="one-half column">
         <p>Theme by <a href="#">Northify</a> </p>
     </div>
+
+</footer>
+</div>
 </body>
 
 </html>
