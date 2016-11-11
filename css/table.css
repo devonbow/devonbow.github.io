@@ -1,0 +1,51 @@
+/* Smartphone landscape */
+
+@media (min-width: 480px) {}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .table {
+        margin-left: 5px;
+    }
+    .contact-table {
+        width: 99%;
+        margin-bottom: 50px;
+    }
+    .contact-table caption {
+        color: #373737;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 200;
+        margin-bottom: 10px;
+    }
+    .contact-table th {
+        text-align: left;
+        background-color: #fff;
+        color: #373737;
+        letter-spacing: 1px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+    .contact-table td {
+        color: #373737;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+    .contact-table tr:nth-child(odd) {
+        background-color: #f9f8f8;
+    }
+    .contact-table tr:hover {
+        background-color: #999999;
+        cursor: crosshair;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}

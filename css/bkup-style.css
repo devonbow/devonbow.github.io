@@ -1,7 +1,3 @@
-@import url(grid.css);
-@import url(form.css);
-@import url(table.css);
-
 /* Box sizing */
 
 html {
@@ -12,6 +8,46 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+.container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.column {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.one-whole {
+    width: 940px;
+}
+
+.three-quarters {
+    width: 700px;
+}
+
+.one-half {
+    width: 460px;
+}
+
+.two-thirds {
+    width: 620px;
+}
+
+.one-third {
+    width: 300px;
+}
+
+.one-sixth {
+    width: 140px;
 }
 
 .alpha {
@@ -62,9 +98,7 @@ ul {
     color: #5adae2;
     /* turquoise */
 }
-.center {
-    text-align: center;
-}
+
 .pull-right {
     float: right;
 }
@@ -129,6 +163,35 @@ ul {
     margin-bottom: 20px;
 }
 
+.portfolio-item {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.portfolio-title {
+    color: white;
+    text-align: center;
+    height: 308px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* opacity is zero. Nothing displays */
+    padding: 10px;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
+}
+
+.portfolio-title:hover {
+    background-color: #5adae2;
+    /* turquoise */
+    opacity: .9;
+    /* almost opaque */
+}
 
 
 /* hide portfolio image text */
@@ -156,6 +219,11 @@ ul {
     padding-bottom: 10px;
 }
 
+.table {
+    margin-left: 5px;
+}
+
+.form p,
 .map h2 {
     margin-left: 15px;
 }
@@ -183,9 +251,6 @@ h3 {
     color: #373737;
     font-size: 24px;
     font-weight: 200;
-}
-.h3 {
-    text-align: center;
 }
 
 h4 {
@@ -293,7 +358,9 @@ a {
     color: #FFF;
 }
 
-
+.one-quarter {
+    width: 220px;
+}
 
 p {
     font-size: 18px;
@@ -554,6 +621,25 @@ input[type="tel"] {
     border-radius: 4px;
 }
 
+.contact-form input {
+    width: 445px;
+}
+
+.contact-form textarea {
+    width: 445px;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    color: #373737;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
 input[type="submit"].btn {
     border: 0 none;
     padding-top: 0;
@@ -567,6 +653,10 @@ input[type="submit"].btn {
     -webkit-transition: background 0.5s ease 0s;
     -moz-transition: background 0.5s ease 0s;
     transition: background 0.5s ease 0s;
+}
+
+.form p {
+    margin-bottom: 20px;
 }
 
 .sidebar-form input[type="text"] {
@@ -594,60 +684,61 @@ input[type="submit"].btn {
     transition: background 0.5s ease 0s;
 }
 
+.contact-table {
+    width: 99%;
+    margin-bottom: 50px;
+}
 
+.contact-table caption {
+    color: #373737;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.contact-table th {
+    text-align: left;
+    background-color: #fff;
+    color: #373737;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.contact-table td {
+    color: #373737;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.contact-table tr:nth-child(odd) {
+    background-color: #f9f8f8;
+}
+
+.contact-table tr:hover {
+    background-color: #999999;
+    cursor: crosshair;
+}
 /* Smartphone landscape */
+@media (min-width: 480px) {
 
-@media (min-width: 480px) {}
+
+}
 
 
 /* Small devices (tablets, 768px and up) */
-
 @media (min-width: 768px) {
-    /* Global */
-    .contentbox .one-half {
-        width: 344px;
-    }
-    /* Portfolio */
-    .portfolio-item {
-        position: relative;
-        margin-bottom: 10px;
-    }
-    .portfolio-title {
-        color: white;
-        text-align: center;
-        height: 243px;
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        padding: 10px;
-        -webkit-transition: opacity 0.3s ease 0s;
-        -moz-transition: opacity 0.3s ease-out;
-        -ms-transition: opacity 0.3s ease-out;
-        -o-transition: opacity 0.3s ease-out;
-        transition: opacity 0.3s ease 0s;
-    }
-    .portfolio-title:hover,
-    .portfolio-title:focus {
-        opacity: .9;
-        background-color: #5adae2;
-    }
+
+
 }
 
 
 /* Medium devices (desktops, 992px and up) */
-
 @media (min-width: 992px) {
-    /* Global */
-    .contentbox .one-half {
-        width: 440px;
-    }
-    /* Portfolio */
-    .portfolio-title {
-        height: 308px;
-    }
-    .portfolio-title h2 {
-        margin-top: 40px;
-    }
+
+
 }

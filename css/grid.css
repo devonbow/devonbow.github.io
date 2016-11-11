@@ -1,0 +1,122 @@
+        /* Smartphone landscape */
+    
+    .container {
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .one-whole,
+    .three-quarters,
+    .one-half,
+    .one-quarter,
+    .two-thirds,
+    .one-third,
+    .one-sixth {
+        width: 300px;
+    }
+    
+    .alpha {
+        margin-left: 0;
+    }
+    
+    .omega {
+        margin-right: 0;
+    }
+    
+    .column {
+        float: left;
+    }
+    /* update to .row class */
+    
+    .row:before,
+    .row:after {
+        display: table;
+        content: " ";
+    }
+    
+    .row:after {
+        clear: both;
+    }
+    
+    @media (min-width: 480px) {
+        .container {
+            width: 420px;
+        }
+        .one-whole,
+        .three-quarters,
+        .one-half,
+        .one-quarter,
+        .two-thirds,
+        .one-third,
+        .one-sixth {
+            width: 420px;
+        }
+    }
+    /* Small devices (tablets, 768px and up) */
+    
+    @media (min-width: 768px) {
+        .container {
+            width: 768px;
+        }
+        .column {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .one-whole {
+            width: 748px;
+        }
+        .three-quarters {
+            width: 556px;
+        }
+        .one-half {
+            width: 364px;
+        }
+        .one-quarter {
+            width: 172px;
+        }
+        .two-thirds {
+            width: 492px;
+        }
+        .one-third {
+            width: 236px;
+        }
+        .one-sixth {
+            width: 108px;
+        }
+    }
+    /* Medium devices (desktops, 992px and up) */
+    
+    @media (min-width: 992px) {
+        .container {
+            width: 960px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .column {
+            float: left;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .one-whole {
+            width: 940px;
+        }
+        .three-quarters {
+            width: 700px;
+        }
+        .one-half {
+            width: 460px;
+        }
+        .two-thirds {
+            width: 620px;
+        }
+        .one-third {
+            width: 300px;
+        }
+        .one-sixth {
+            width: 140px;
+        }
+        .one-quarter {
+            width: 220px;
+        }
+    }
