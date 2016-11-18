@@ -32,7 +32,7 @@
     .row:before,
     .row:after {
         display: table;
-        content: " ";
+        content: "";
     }
     
     .row:after {
