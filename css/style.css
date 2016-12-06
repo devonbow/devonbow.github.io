@@ -226,9 +226,11 @@ a {
     background-color: #000;
     color: #FFF;
 }
+
 .footer-bottom p {
     font-size: 11px;
 }
+
 .footer-bottom a {
     color: #FFF;
 }
@@ -567,6 +569,69 @@ input[type="submit"].btn {
 }
 
 
+/* Mobile navigation */
+
+.menu-link {
+    position: absolute;
+    right: 150px;
+    /* adjust this value if need be */
+    top: 60px;
+    /* adjust this value if need be */
+}
+
+.nav {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+    /* zero height so nav is hidden */
+}
+
+.nav.active {
+    max-height: 25em;
+    /* after menu click, nav expands */
+}
+
+.nav.active a {
+    color: #fff;
+}
+
+.nav ul {
+    width: 100%;
+}
+
+.nav li {
+    display: block;
+    float: none;
+    border-top: 1px solid #dedede;
+    /* gray */
+    border-right: 1px solid #dedede;
+    /* gray */
+    border-left: 1px solid #dedede;
+    /* gray */
+    font-size: 18px;
+}
+
+.nav li:last-child {
+    border-bottom: 1px solid #dedede;
+    /* gray */
+}
+
+.nav a {
+    display: block;
+    padding: 15px;
+}
+
+.nav a:hover,
+.nav a:focus {
+    background-color: #5ADAE2;
+    /* turquoise */
+}
+
+
 /* Smartphone landscape */
 
 @media (min-width: 480px) {}
@@ -634,6 +699,38 @@ input[type="submit"].btn {
     .portfolio-title:focus {
         opacity: .9;
         background-color: #5adae2;
+    }
+    /* Horizontal navigation */
+    .nav {
+        padding-top: 60px;
+        max-height: none;
+    }
+    .nav ul {
+        width: auto;
+    }
+    .nav li {
+        display: inline-block;
+        border: 0 none;
+        border-right: 1px solid #dedede;
+        /* gray */
+    }
+    .nav li:last-child {
+        border-bottom: 0 none;
+        border-right: 0 none;
+    }
+    .nav a {
+        padding: 0px 10px;
+        transition: all 0.15s ease-in-out;
+    }
+    .nav a:hover,
+    .active a {
+        color: #5ADAE2;
+        /* turquoise */
+        background-color: transparent;
+    }
+    /* mobile nav */
+    .menu-link {
+        display: none;
     }
 }
 
