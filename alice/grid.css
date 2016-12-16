@@ -1,0 +1,195 @@
+.container {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.one-whole,
+.three-quarters,
+.one-half,
+.one-quarter,
+.two-thirds,
+.one-third,
+.one-sixth {
+    width: 300px;
+}
+
+.alpha {
+    margin-left: 0;
+}
+
+.omega {
+    margin-right: 0;
+}
+
+.column {
+    float: left;
+}
+
+
+/* update to .row class */
+
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
+
+/* Smartphone landscape */
+
+@media (min-width: 480px) {
+    .container {
+        width: 420px;
+    }
+    .one-whole,
+    .three-quarters,
+    .one-half,
+    .one-quarter,
+    .two-thirds,
+    .one-third,
+    .one-sixth {
+        width: 420px;
+    }
+    .container {
+        width: 480px;
+    }
+    .column {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .one-third {
+        width: 450px;
+    }
+    .column1 {
+        float: left;
+        margin-left: 100px;
+    }
+    .one-whole {
+        width: 480px;
+    }
+    .one-half {
+        width: 240px;
+    }
+    .column3 {
+        float: left;
+        margin-right: 50px;
+        padding-top: 30px;
+        margin-left: 20px;
+    }
+    .column4 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 100px;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .column {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .column1 {
+        float: left;
+        margin-left: 40px;
+    }
+    .column2 {
+        float: left;
+        margin: 25px;
+    }
+    .one-whole {
+        width: 768px;
+    }
+    .three-quarters {
+        width: 556px;
+    }
+    .one-half {
+        width: 364px;
+    }
+    .one-quarter {
+        width: 172px;
+    }
+    .two-thirds {
+        width: 390px;
+    }
+    .one-third {
+        width: 200px;
+    }
+    .one-sixth {
+        width: 108px;
+    }
+    .column3 {
+        float: left;
+        margin-right: 0;
+        padding-top: 30px;
+        margin-left: 0;
+    }
+    .column4 {
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+        margin: auto;
+    }
+    .column {
+        float: left;
+    }
+    .column1 {
+        float: left;
+        margin-left: 50px;
+    }
+    .column2 {
+        float: left;
+        margin: 30px;
+    }
+    .column3 {
+        float: left;
+        margin-right: 0;
+        padding-top: 30px;
+        margin-left: 0;
+    }
+    .column4 {
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .one-quarter {
+        width: 220px;
+    }
+    .three-quarters {
+        width: 690px;
+    }
+    .one-whole {
+        width: 960px;
+    }
+    .one-half {
+        width: 480px;
+    }
+    .one-third {
+        width: 250px;
+    }
+    .two-thirds {
+        width: 580px;
+    }
+}
