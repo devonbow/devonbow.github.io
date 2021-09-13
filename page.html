@@ -3,14 +3,31 @@
 
 <head>
     <link rel="stylesheet" href="css/style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("button").on('click', function() {
+            var h1 = $("h1").css("color", "red");
+            h1.animate({
+                fontSize: '4em'
+            }, "slow");
+            h1.animate({
+                fontSize: '3em'
+            }, "slow");
+            $("img").addClass("border");
+       
+        });
+        });
 
-    <title>Homework 1</title>
+    </script>
+
+    <title>Homework 1A</title>
 </head>
 
 <body>
 
     <h1>Simple HTML & CSS Page</h1>
-    <img src="images/DevonandLeonintheKitchen_cr%20(2).jpg" alt="Me">
+    <img src="images/DevonandLeonintheKitchen_cr%20(2).jpg" alt="Devon face image">
     <p>My name is Devon Merritt, and I'm a VMD student from San Francisco.</p>
 
 
@@ -29,9 +46,11 @@
     <h3>Resources</h3>
 
     <ul>
-        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a>-This site provides coding tutorials for HTML, CSS, Javascript and other aspects of web development.</li>
-        <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a>-Codecademy provides paid courses in skills like web development, Javascript and data science.</li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel=“noopener noreferrer”>W3Schools</a>-This site provides coding tutorials for HTML, CSS, Javascript and other aspects of web development.</li>
+        <li><a href="https://www.codecademy.com/" target="_blank" rel=“noopener noreferrer”>Codecademy</a>-Codecademy provides paid courses in skills like web development, Javascript and data science.</li>
     </ul>
+    <button>Start Animation</button>
+
 </body>
 
 </html>
