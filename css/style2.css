@@ -4,6 +4,8 @@ body {
 }
 h1 {
     text-align: center;
+    color: black;
+    font-size: 3em;
 }
 div{
     margin-top: 200px;
@@ -13,4 +15,10 @@ img {
     width: 200px;
     height: 200px;
     margin-right: 20px;
+}
+h3 {
+    text-align: center;
+}
+.border {
+    border-style: solid;
 }
