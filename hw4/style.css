@@ -1,7 +1,6 @@
 body {
     background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-width: 1000px;
 }
 
 #container {
