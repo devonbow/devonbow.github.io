@@ -2,13 +2,9 @@
     "short_name": "Weather",
     "name": "Weather: Do I need an umbrella?",
     "icons": [
+
         {
-            "src": "/images/camera-icon.jpg",
-            "type": "image/svg+xml",
-            "sizes": "512x512"
-    },
-        {
-            "src": "/images/band aid.png",
+            "src": "/images/band aid1.png",
             "type": "image/png",
             "sizes": "192x192"
     },
@@ -18,7 +14,7 @@
             "sizes": "512x512"
     }
   ],
-    "start_url": "/?source=pwa",
+    "start_url": "google.com",
     "background_color": "#3367D6",
     "display": "standalone",
     "scope": "/",
